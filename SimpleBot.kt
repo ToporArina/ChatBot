@@ -1,9 +1,16 @@
 package bot
 
+import java.util.Scanner
+
+
 fun main() {
-    println("""
-        Hello! My name is Aid.
-        I was created in 2020.
-    """.trimIndent())
-    // write your code here
+    val scanner = Scanner(System.`in`)
+
+    println("Hello! My name is Aid.")
+    println("I was created in 2020.")
+    println("Please, remind me your name.")
+
+    val yourName = scanner.nextLine()
+
+    println("What a great name you have, ${yourName}!")
 }
